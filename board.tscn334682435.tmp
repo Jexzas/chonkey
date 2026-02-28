@@ -1,0 +1,327 @@
+[gd_scene load_steps=7 format=3 uid="uid://cuwddbcj7agos"]
+
+[ext_resource type="Texture2D" uid="uid://dbbwitvk0cmls" path="res://images/board.png" id="1_p0ybc"]
+[ext_resource type="Texture2D" uid="uid://dg8rh018sjbcf" path="res://images/pexels-felix-mittermeier-1146134.jpg" id="1_psm7c"]
+[ext_resource type="Script" uid="uid://betpjfs1qd01l" path="res://boardAmbiance.gd" id="2_8l818"]
+[ext_resource type="Texture2D" uid="uid://myuqukswk8qk" path="res://images/blEmperor.png" id="4_jqgjh"]
+[ext_resource type="Script" uid="uid://bpa6ysnsfbv2x" path="res://pieceBeh.gd" id="4_mgc1s"]
+[ext_resource type="Texture2D" uid="uid://c8i3j6smyj253" path="res://images/redEmperor.png" id="5_vf5bc"]
+
+[node name="Main" type="Node2D"]
+scale = Vector2(1.25, 1.25)
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+offset_left = -1377.6
+offset_top = -772.0001
+offset_right = -1291.8828
+offset_bottom = -687.94885
+scale = Vector2(67.48, 39.84)
+texture = ExtResource("1_psm7c")
+expand_mode = 1
+
+[node name="BoardNode" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(296, 352)
+script = ExtResource("2_8l818")
+
+[node name="SpriteBoard" type="Sprite2D" parent="BoardNode"]
+
+[node name="Board" type="TextureRect" parent="BoardNode/SpriteBoard"]
+unique_name_in_owner = true
+physics_interpolation_mode = 1
+offset_left = -317.0
+offset_top = -339.0
+offset_right = 325.0
+offset_bottom = 363.0
+texture = ExtResource("1_p0ybc")
+
+[node name="j1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, -258)
+
+[node name="j2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, -258)
+
+[node name="j3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, -258)
+
+[node name="j4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, -258)
+
+[node name="j5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, -258)
+
+[node name="j6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, -258)
+
+[node name="j7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, -258)
+
+[node name="j8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, -258)
+
+[node name="j9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, -258)
+
+[node name="i1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, -198)
+
+[node name="i2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, -198)
+
+[node name="i3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, -198)
+
+[node name="i4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, -198)
+
+[node name="i5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, -198)
+
+[node name="i6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, -198)
+
+[node name="i7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, -198)
+
+[node name="i8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, -198)
+
+[node name="i9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, -198)
+
+[node name="h1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, -138)
+
+[node name="h2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, -138)
+
+[node name="h3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, -138)
+
+[node name="h4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, -138)
+
+[node name="h5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, -138)
+
+[node name="h6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, -138)
+
+[node name="h7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, -138)
+
+[node name="h8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, -138)
+
+[node name="h9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, -138)
+
+[node name="g1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, -78)
+
+[node name="g2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, -78)
+
+[node name="g3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, -78)
+
+[node name="g4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, -78)
+
+[node name="g5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, -78)
+
+[node name="g6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, -78)
+
+[node name="g7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, -78)
+
+[node name="g8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, -78)
+
+[node name="g9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, -78)
+
+[node name="f1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, -18)
+
+[node name="f2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, -18)
+
+[node name="f3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, -18)
+
+[node name="f4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, -18)
+
+[node name="f5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, -18)
+
+[node name="f6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, -18)
+
+[node name="f7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, -18)
+
+[node name="f8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, -18)
+
+[node name="f9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, -18)
+
+[node name="e1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, 43)
+
+[node name="e2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, 43)
+
+[node name="e3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, 43)
+
+[node name="e4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, 43)
+
+[node name="e5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, 43)
+
+[node name="e6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, 43)
+
+[node name="e7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, 43)
+
+[node name="e8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, 43)
+
+[node name="e9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, 43)
+
+[node name="d1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, 103)
+
+[node name="d2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, 103)
+
+[node name="d3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, 103)
+
+[node name="d4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, 103)
+
+[node name="d5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, 103)
+
+[node name="d6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, 103)
+
+[node name="d7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, 103)
+
+[node name="d8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, 103)
+
+[node name="d9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, 103)
+
+[node name="c1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, 163)
+
+[node name="c2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, 163)
+
+[node name="c3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, 163)
+
+[node name="c4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, 163)
+
+[node name="c5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, 163)
+
+[node name="c6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, 163)
+
+[node name="c7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, 163)
+
+[node name="c8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, 163)
+
+[node name="c9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, 163)
+
+[node name="b1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, 223)
+
+[node name="b2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, 223)
+
+[node name="b3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, 223)
+
+[node name="b4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, 223)
+
+[node name="b5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, 223)
+
+[node name="b6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, 223)
+
+[node name="b7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, 223)
+
+[node name="b8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, 223)
+
+[node name="b9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, 223)
+
+[node name="a1" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-234, 283)
+
+[node name="a2" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-176, 283)
+
+[node name="a3" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-116, 283)
+
+[node name="a4" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(-56, 283)
+
+[node name="a5" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(2, 283)
+
+[node name="a6" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(62, 283)
+
+[node name="a7" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(125, 283)
+
+[node name="a8" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(183, 283)
+
+[node name="a9" type="Marker2D" parent="BoardNode/SpriteBoard"]
+position = Vector2(243, 283)
+
+[node name="BlKing" type="Node2D" parent="BoardNode" node_paths=PackedStringArray("piece")]
+position = Vector2(2.4000244, -258.39996)
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("4_mgc1s")
+piece = NodePath(".")
+
+[node name="Sprite2D" type="Sprite2D" parent="BoardNode/BlKing"]
+texture = ExtResource("4_jqgjh")
+
+[node name="RdKing" type="Node2D" parent="BoardNode"]
+position = Vector2(4, 283.19992)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Sprite2D" type="Sprite2D" parent="BoardNode/RdKing"]
+texture = ExtResource("5_vf5bc")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(313, 352)
+zoom = Vector2(0.635, 0.635)

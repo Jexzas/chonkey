@@ -641,6 +641,3 @@ texture = ExtResource("18_8issi")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(313, 352)
 zoom = Vector2(0.635, 0.635)
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-unique_name_in_owner = true
