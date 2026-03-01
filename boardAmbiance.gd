@@ -9,6 +9,7 @@ var positions: Dictionary = {}
 var piecesReady: int = 0
 var sound = preload("res://sound/clump.ogg")
 var bing: SceneTreeTimer 
+var rando = RandomNumberGenerator.new()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	for child in get_tree().get_nodes_in_group("markers"):
@@ -24,10 +25,12 @@ func _ready() -> void:
 
 func readyThePieces(delta:float):
 	for piece in get_tree().get_nodes_in_group("pieces"):
+		var my_random_number = rando.randf_range(.75, 1.715)
 		while piece.position != piece.defPos.position:
 			piece.position = piece.position.lerp(piece.defPos.position, .7)
 			if !%AudioStreamPlayer2D.is_playing():
 				%AudioStreamPlayer2D.stream = sound
+				%AudioStreamPlayer2D.pitch_scale = my_random_number
 				%AudioStreamPlayer2D.play()
 		piecesReady += 1
 		bing = get_tree().create_timer(.3)
