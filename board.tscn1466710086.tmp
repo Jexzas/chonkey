@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cuwddbcj7agos"]
+[gd_scene load_steps=21 format=3 uid="uid://cuwddbcj7agos"]
 
 [ext_resource type="Texture2D" uid="uid://dbbwitvk0cmls" path="res://images/board.png" id="1_p0ybc"]
 [ext_resource type="Texture2D" uid="uid://dg8rh018sjbcf" path="res://images/pexels-felix-mittermeier-1146134.jpg" id="1_psm7c"]
@@ -21,9 +21,6 @@
 [ext_resource type="Texture2D" uid="uid://c5m3frywxv7yf" path="res://images/redChariot.png" id="17_lutf5"]
 [ext_resource type="Texture2D" uid="uid://dajcwk47chpl0" path="res://images/redHorse.png" id="18_8issi"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b65qd"]
-size = Vector2(0.5082989, 0.48192883)
-
 [node name="Main" type="Node2D"]
 scale = Vector2(1.25, 1.25)
 
@@ -37,173 +34,149 @@ scale = Vector2(67.48, 39.84)
 texture = ExtResource("1_psm7c")
 expand_mode = 1
 
-[node name="center" type="Marker2D" parent="Background"]
-unique_name_in_owner = true
-position = Vector2(24.789566, 28.132532)
-
-[node name="yap" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
+[node name="yap" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+mass = 23.776
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap2" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(21.04327, 62.269073)
+[node name="yap2" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(10.45643, 3.975906)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap2"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap2"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap3" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(63.793713, 28.61446)
+[node name="yap3" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(7.291049, 29.678717)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap3"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap3"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap4" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(26.437462, 1.6265084)
+[node name="yap4" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(28.168344, 4.658637)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap4"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap4"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap5" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(12.163603, 54.437748)
+[node name="yap5" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(7.101363, 40.140564)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap5"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap5"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap6" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(45.54831, 57.530117)
+[node name="yap6" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(32.258446, 46.26506)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap6"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap6"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap7" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(63.59217, 49.69879)
+[node name="yap7" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(15.328985, 42.971886)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap7"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap7"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap8" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(67.17249, 7.3493996)
+[node name="yap8" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(32.969765, 11.024103)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap8"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap8"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap9" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(79.03971, 27.289158)
+[node name="yap9" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(44.69472, 16.445786)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap9"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap9"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap10" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(46.41375, 6.7068295)
+[node name="yap10" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(40.640186, 8.072292)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap10"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap10"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
-
-[node name="yap11" type="Node2D" parent="Background" node_paths=PackedStringArray("yapper")]
-position = Vector2(78.64848, 67.02811)
+[node name="yap11" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(43.16538, 34.036148)
 script = ExtResource("2_b65qd")
 yapper = NodePath(".")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/yap11"]
-position = Vector2(-0.015773773, -0.123220444)
-scale = Vector2(0.0013305276, 0.0015341361)
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
 texture = ExtResource("2_y1vqq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/yap11"]
-position = Vector2(-0.0069026947, -0.15402603)
-scale = Vector2(1.3305275, 1.5341357)
-shape = SubResource("RectangleShape2D_b65qd")
+[node name="yap12" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(39.146408, 42.40964)
+script = ExtResource("2_b65qd")
+yapper = NodePath(".")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/yap12"]
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
+texture = ExtResource("2_y1vqq")
+
+[node name="yap13" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(31.523413, 49.658638)
+script = ExtResource("2_b65qd")
+yapper = NodePath(".")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/yap13"]
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
+texture = ExtResource("2_y1vqq")
+
+[node name="yap14" type="RigidBody2D" parent="Background" node_paths=PackedStringArray("yapper")]
+position = Vector2(20.474213, 45.742973)
+script = ExtResource("2_b65qd")
+yapper = NodePath(".")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/yap14"]
+position = Vector2(-0.011855125, -0.08031845)
+scale = Vector2(0.001, 0.001)
+texture = ExtResource("2_y1vqq")
+
+[node name="center" type="Marker2D" parent="Background"]
+unique_name_in_owner = true
+position = Vector2(24.789566, 28.132532)
 
 [node name="BoardNode" type="Node2D" parent="."]
 unique_name_in_owner = true

@@ -20,11 +20,9 @@ func _process(delta: float) -> void:
 
 
 func animate(delta: float) -> void:
-	print("something")
 	var base = pScale
 	for i in range(100):
 		var my_random_number = rand.randf_range(.995, 1.005)
 		piece.apply_scale(Vector2(my_random_number, my_random_number))
 		await get_tree().create_timer(.0002 * delta).timeout
-		print(piece.transform.get_scale())
 	piece.scale = pScale
